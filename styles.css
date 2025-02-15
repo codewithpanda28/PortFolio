@@ -2275,6 +2275,15 @@ body {
     .skills-showcase {
         padding: 2rem 1.5rem;
     }
+    .hero-image-container img{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        /* object-fit: none; */
+        width: 100%;
+    }
+    
 
     .skills-container {
         grid-template-columns: 1fr;
