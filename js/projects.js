@@ -49,9 +49,9 @@ const projects = {
         date: 'February 2024',
         image: 'project3/news-blog.png',
         additionalImages: [
-            { url: 'project3/news-list.png', alt: 'News Listing Page' },
-            { url: 'project3/blog-editor.png', alt: 'Blog Editor Interface' },
-            { url: 'project3/weather-widget.png', alt: 'Weather Widget' }
+            { url: 'project3/2.png', alt: 'News Listing Page' },
+            { url: 'project3/3.png', alt: 'Blog Editor Interface' },
+            { url: 'project3/4.png', alt: 'Weather Widget' }
         ],
         description: 'A React-based platform for news and blogging with category filters, weather updates, and bookmarking.',
         features: [

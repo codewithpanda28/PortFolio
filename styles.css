@@ -3025,3 +3025,59 @@ i {
 .submit-btn .fa-spinner {
     margin-right: 0.5rem;
 }
+
+/* Resume Page Styles */
+.resume-section {
+    padding: 120px 20px 60px;
+    min-height: 100vh;
+    background: var(--bg-color);
+}
+
+.resume-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.resume-container h1 {
+    text-align: center;
+    color: var(--text-color);
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+}
+
+.resume-content {
+    background: var(--card-bg);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.resume-preview {
+    margin-bottom: 30px;
+}
+
+.resume-image {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.resume-pdf {
+    margin-bottom: 30px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.resume-actions {
+    text-align: center;
+}
+
+.resume-actions .btn {
+    padding: 12px 30px;
+    font-size: 1.1rem;
+}

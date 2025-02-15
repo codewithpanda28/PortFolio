@@ -388,3 +388,9 @@ formInputs.forEach(input => {
         }
     });
 });
+
+// Resume button click handler
+document.getElementById('resumeBtn').addEventListener('click', function(e) {
+    e.preventDefault();
+    window.location.href = 'resume.html';
+});
