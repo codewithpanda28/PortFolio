@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Portfolio</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script>
+        (function() {
+            emailjs.init("9V4RhGDUCUauho_oJ");
+        })();
+    </script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="logo">
+                <span class="highlight">P</span>ortfolio
+            </div>
+            <div class="nav-items">
+                <div class="theme-selector">
+                    <select id="themeSelect" class="theme-select">
+                        <option value="light">Light Mode</option>
+                        <option value="dark">Dark Mode</option>
+                        <option value="blue">Blue Theme</option>
+                        <option value="purple">Purple Theme</option>
+                        <option value="green">Green Theme</option>
+                    </select>
+                    <i class="fas fa-palette theme-icon"></i>
+                </div>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </div>
+            <div class="menu-btn">
+                <div class="menu-btn__lines"></div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="circle circle-1"></div>
+            <div class="circle circle-2"></div>
+            <!-- <div class="circle circle-3"></div> -->
+        </div>
+        
+        <div class="hero-text">
+            <div class="tag" data-aos="fade-down">
+                <i class="fas fa-code"></i> Welcome to my Creative Space
+            </div>
+            <h1 data-aos="fade-up" data-aos-delay="200">
+                Hi, I'm a
+                <div class="animated-text">
+                    <span class="typed-text"></span>
+                </div>
+            </h1>
+            <div class="description" data-aos="fade-up" data-aos-delay="400">
+                <div class="desc-item">
+                    <i class="fas fa-rocket"></i>
+                    <span>Transforming ideas into digital reality</span>
+                </div>
+                <div class="desc-item">
+                    <i class="fas fa-paint-brush"></i>
+                    <span>Creating elegant and responsive designs</span>
+                </div>
+                <div class="desc-item">
+                    <i class="fas fa-cogs"></i>
+                    <span>Building robust and scalable solutions</span>
+                </div>
+            </div>
+            
+            <!-- <div class="skill-tags" data-aos="fade-up" data-aos-delay="500">
+                <span class="skill-tag">HTML5</span>
+                <span class="skill-tag">CSS3</span>
+                <span class="skill-tag">JavaScript</span>
+                <span class="skill-tag">React</span>
+                <span class="skill-tag">Node.js</span>
+            </div> -->
+
+            <div class="cta-buttons" data-aos="fade-up" data-aos-delay="600">
+                <a href="#projects" class="btn primary " >
+                    <i class="fas fa-code btn-icon" ></i>
+                    View Work
+                </a>
+                <a href="#contact" class="btn secondary">
+                    <i class="fas fa-paper-plane btn-icon"></i>
+                    Let's Talk
+                </a>
+                <button class="btn accent" id="resumeBtn">
+                    <i class="fas fa-file-alt btn-icon"></i>
+                    Resume
+                </button>
+            </div>
+
+            <div class="social-icons floating" data-aos="fade-up" data-aos-delay="700">
+                <a href="https://github.com/codewithpanda28?tab=repositories" class="social-icon" title="GitHub">
+                    <div class="icon-background"></div>
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/codewithpanda28/" class="social-icon" title="LinkedIn">
+                    <div class="icon-background"></div>
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://www.youtube.com/@NexCodeUI?themeRefresh=1" class="social-icon" title="YouTube">
+                    <div class="icon-background"></div>
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                <a href="https://www.instagram.com/panda_creation_29?igsh=MXoydTd4cjF5MnFq" class="social-icon" title="Instagram">
+                    <div class="icon-background"></div>
+                    <i class="fab fa-instagram"></i>
+                </a>
+                
+            </div>
+        </div>
+
+        <div class="hero-image" data-aos="fade-left" data-aos-delay="300">
+            <div class="hero-image-container">
+                <img src="assets/1.jpg" alt="Developer" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); object-fit: cover;">
+                <div class="image-overlay"></div>
+            </div>
+            <div class="floating-icons">
+                <i class="fab fa-html5" title="HTML5"></i>
+                <i class="fab fa-css3-alt" title="CSS3"></i>
+                <i class="fab fa-js" title="JavaScript"></i>
+                <i class="fab fa-react" title="React"></i>
+                <i class="fab fa-node-js" title="Node.js"></i>
+                
+            </div>
+            <div class="experience-badge">
+                <a href="https://www.youtube.com" target="_blank">
+                    <span class="number">
+                        <i class="fab fa-youtube"></i>
+                    </span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+        <!-- skill section -->
+        <section id="skills" class="skills">   <div class="skills-showcase">
+            <h3>My Skills</h3>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h4>Frontend</h4>
+                    <div class="skill-items">
+                        <div class="skill-item" data-aos="zoom-in" data-aos-delay="100">
+                            <i class="fab fa-html5"></i>
+                            <span>HTML5</span>
+                        </div>
+                        <div class="skill-item" data-aos="zoom-in" data-aos-delay="200">
+                            <i class="fab fa-css3-alt"></i>
+                            <span>CSS3</span>
+                        </div>
+                        <div class="skill-item" data-aos="zoom-in" data-aos-delay="300">
+                            <i class="fab fa-js"></i>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="skill-item" data-aos="zoom-in" data-aos-delay="400">
+                            <i class="fab fa-react"></i>
+                            <span>React</span>
+                        </div>
+                        <div class="skill-item" data-aos="zoom-in" data-aos-delay="500">
+                            <i class="fab fa-bootstrap"></i>
+                            <span>Bootstrap</span>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="skill-category">
+                    <h4>Backend</h4>
+                    <div class="skill-items">
+                        <div class="skill-item" data-aos="zoom-in" data-aos-delay="100">
+                            <i class="fab fa-node-js"></i>
+                            <span>Node.js</span>
+                        </div>
+                      
+                      
+                        <div class="skill-item" data-aos="zoom-in" data-aos-delay="400">
+                            <i class="fas fa-server"></i>
+                            <span>MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="skill-category">
+                    <h4>Design & Tools</h4>
+                    <div class="skill-items">
+                        <div class="skill-item" data-aos="zoom-in" data-aos-delay="100">
+                            <i class="fab fa-figma"></i>
+                            <span>Figma</span>
+                        </div>
+                        <div class="skill-item" data-aos="zoom-in" data-aos-delay="200">
+                            <i class="fab fa-git-alt"></i>
+                            <span>Git</span>
+                        </div>
+                      
+                        <div class="skill-item" data-aos="zoom-in" data-aos-delay="400">
+                            <i class="fas fa-mobile-alt"></i>
+                            <span>Responsive</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="section-title" data-aos="fade-up">
+            <h2>Featured Projects</h2>
+            <div class="title-bar"></div>
+        </div>
+        
+        <div class="projects-grid" id="projectsContainer">
+            <!-- Initial Projects -->
+            <div class="visible-projects">
+                <!-- Project Card 1 -->
+                <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-image">
+                        <a href="project-details.html?project=task-management">
+                            <img src="project1/2.png" alt="Project 2">
+                            <div class="project-overlay"></div>
+                        </a>
+                    </div>
+                    <div class="project-content">
+                        <h3>Task Management App</h3>
+                        <p>A collaborative task management tool with real-time updates.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/codewithpanda28/Template-Site.git" class="project-link">
+                                <i class="fab fa-github"></i> View Code
+                            </a>
+                            <a href="https://codewithpanda.netlify.app/" class="project-link">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 2 -->
+                <div class="project-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="project-image">
+                        <a href="project-details.html?project=ai-content-platform">
+                            <img src="project2/1.png" alt="Project 3">
+                            <div class="project-overlay"></div>
+                        </a>
+                    </div>
+                    <div class="project-content">
+                        <h3> Old Book Buy/Sell Platform</h3>
+                        <p>A Next.js-based platform to buy and sell used books with authentication, search, and responsive design.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/codewithpanda28/Book_Mart.git" class="project-link">
+                                <i class="fab fa-github"></i> View Code
+                            </a>
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 3 -->
+                <div class="project-card" data-aos="fade-up">
+                    <div class="project-image">
+                        <a href="project-details.html?project=news-blog">
+                            <img src="project3/news-blog.png" alt="Project 1">
+                            <div class="project-overlay"></div>
+                        </a>
+                    </div>
+                    <div class="project-content">
+                        <h3>CWP - News & Blog</h3>
+                        <p>A React-based platform for news and blogging with category filters, weather updates, and bookmarking.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/codewithpanda28/News-Blog.git" class="project-link">
+                                <i class="fab fa-github"></i> View Code
+                            </a>
+                            <a href="https://cwp-news-blog.netlify.app/" class="project-link">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hidden Projects (Initially Hidden) -->
+            <div class="hidden-projects" style="display: none;">
+                <!-- Additional Project Cards will be here -->
+                <div class="project-card" data-aos="fade-up">
+                    <div class="project-image">
+                        <a href="project-details.html?project=news-blog">
+                            <img src="project3/news-blog.png" alt="Project 4">
+                            <div class="project-overlay"></div>
+                        </a>
+                    </div>
+                    <div class="project-content">
+                        <h3>CWP - News & Blog</h3>
+                        <p>A React-based platform for news and blogging with category filters, weather updates, and bookmarking.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/codewithpanda28/News-Blog.git" class="project-link">
+                                <i class="fab fa-github"></i> View Code
+                            </a>
+                            <a href="https://cwp-news-blog.netlify.app/" class="project-link">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- View More Button -->
+        <!-- <div class="view-more-container" data-aos="fade-up">
+            <button id="viewMoreBtn" class="btn primary">
+                <i class="fas fa-folder-open"></i>
+                View More Projects
+            </button>
+        </div> -->
+
+        <style>
+            .projects-grid {
+                display: grid;
+                gap: 2rem;
+                padding: 2rem;
+            }
+
+            .visible-projects, .hidden-projects {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                gap: 2rem;
+            }
+
+            .project-card {
+                background: var(--card-bg, #ffffff);
+                border-radius: 12px;
+                overflow: hidden;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                transition: transform 0.3s ease;
+            }
+
+            .project-card:hover {
+                transform: translateY(-5px);
+            }
+
+            .view-more-container {
+                text-align: center;
+                margin-top: 2rem;
+                padding: 1rem;
+            }
+
+            #viewMoreBtn {
+                display: inline-flex;
+                align-items: center;
+                gap: 0.8rem;
+                padding: 0.8rem 2rem;
+                font-size: 1.1rem;
+                border-radius: 8px;
+                background: var(--primary-color, #007bff);
+                color: white;
+                border: none;
+                cursor: pointer;
+                transition: all 0.3s ease;
+            }
+
+            #viewMoreBtn:hover {
+                transform: translateY(-2px);
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            }
+
+            #viewMoreBtn i {
+                font-size: 1.2rem;
+            }
+
+            .hidden-projects {
+                opacity: 0;
+                height: 0;
+                overflow: hidden;
+                transition: opacity 0.5s ease, height 0.5s ease;
+            }
+
+            .hidden-projects.show {
+                opacity: 1;
+                height: auto;
+            }
+        </style>
+    </section>
+
+    
+
+  
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="section-title" data-aos="fade-up">
+            <h2>Get In Touch</h2>
+            <div class="title-bar"></div>
+        </div>
+
+        <div class="contact-container">
+            <div class="contact-info" data-aos="fade-right">
+                <div class="contact-card">
+                    <i class="fas fa-envelope"></i>
+                    <h3>Email</h3>
+                    <p>codewithpanda28@gmail.com</p>
+                </div>
+                <div class="contact-card">
+                    <i class="fas fa-phone"></i>
+                    <h3>Phone</h3>
+                    <p>+91 8252472186</p>
+                </div>
+                <div class="contact-card">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Location</h3>
+                    <p>Jharkhand, India</p>
+                </div>
+                <div class="contact-card">
+                    <a href="https://www.youtube.com/@NexCodeUI?themeRefresh=1" target="_blank">
+                    <i class="fab fa-youtube"></i></a>
+                    <h3>NexCodeUI</h3>
+                    <p>Subscribe</p>
+                </div>
+            </div>
+
+            <form class="contact-form" data-aos="fade-left" id="contactForm">
+                <div class="form-group">
+                    <input type="text" id="user_name" name="user_name" placeholder="Your Name" required>
+                    <span class="focus-border"></span>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="user_email" name="user_email" placeholder="Your Email" required>
+                    <span class="focus-border"></span>
+                </div>
+                <div class="form-group">
+                    <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                    <span class="focus-border"></span>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                    <span class="focus-border"></span>
+                </div>
+                <button type="submit" class="submit-btn">
+                    <span>Send Message</span>
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+                <div class="form-status"></div>
+            </form>
+
+         
+        </div>
+    </section>
+
+    <!-- Project Modal -->
+    <div class="modal-overlay">
+        <div class="modal">
+            <button class="modal-close">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="modal-images">
+                        <img class="modal-image active" src="" alt="Project Image">
+                        <div class="modal-thumbnails">
+                            <img src="" alt="Thumbnail 1" class="thumbnail active">
+                            <img src="" alt="Thumbnail 2" class="thumbnail">
+                            <img src="" alt="Thumbnail 3" class="thumbnail">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <h2 class="modal-title"></h2>
+                    <p class="modal-description"></p>
+                    <div class="modal-info">
+                        <div class="info-item">
+                            <h3>Technologies</h3>
+                            <div class="modal-tags"></div>
+                        </div>
+                        <div class="info-item">
+                            <h3>Project Links</h3>
+                            <div class="modal-links">
+                                <a href="#" class="modal-link primary" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i> Live Demo
+                                </a>
+                                <a href="#" class="modal-link secondary" target="_blank">
+                                    <i class="fab fa-github"></i> View Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Resume Modal -->
+    <div id="resumeModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="resume-container">
+                <embed src="resume/Screenshot 2025-02-14 221448.png" type="application/pdf" width="100%" height="600px" />
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+
+        // Typed.js initialization
+        var typed = new Typed('.typed-text', {
+            strings: ['Web Developer', 'UI/UX Designer', 'Full Stack Developer'],
+            typeSpeed: 50,
+            backSpeed: 30,
+            backDelay: 2000,
+            loop: true
+        });
+
+        // Theme Selector
+        const themeSelect = document.getElementById('themeSelect');
+        const body = document.body;
+
+        // Load saved theme from localStorage
+        const savedTheme = localStorage.getItem('selectedTheme') || 'light';
+        body.setAttribute('data-theme', savedTheme);
+        themeSelect.value = savedTheme;
+
+        themeSelect.addEventListener('change', function() {
+            const selectedTheme = this.value;
+            body.setAttribute('data-theme', selectedTheme);
+            localStorage.setItem('selectedTheme', selectedTheme);
+
+            // Add animation class
+            body.classList.add('theme-transition');
+            setTimeout(() => {
+                body.classList.remove('theme-transition');
+            }, 300);
+        });
+
+        // Resume Modal
+        const resumeBtn = document.getElementById('resumeBtn');
+        const resumeModal = document.getElementById('resumeModal');
+        const closeModal = document.querySelector('.close-modal');
+
+        resumeBtn.onclick = function() {
+            resumeModal.style.display = "block";
+            resumeModal.classList.add('modal-open');
+        }
+
+        closeModal.onclick = function() {
+            resumeModal.classList.remove('modal-open');
+            setTimeout(() => {
+                resumeModal.style.display = "none";
+            }, 300);
+        }
+
+        window.onclick = function(event) {
+            if (event.target == resumeModal) {
+                resumeModal.classList.remove('modal-open');
+                setTimeout(() => {
+                    resumeModal.style.display = "none";
+                }, 300);
+            }
+        }
+
+        // Handle contact form submission
+        const contactForm = document.getElementById('contactForm');
+        const formStatus = document.querySelector('.form-status');
+
+        contactForm.addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            const formData = new FormData(this);
+            
+            try {
+                const response = await fetch('contact.php', {
+                    method: 'POST',
+                    body: formData
+                });
+                
+                const result = await response.json();
+                
+                if (result.success) {
+                    formStatus.innerHTML = '<div class="success-message">Message sent successfully!</div>';
+                    contactForm.reset();
+                } else {
+                    formStatus.innerHTML = '<div class="error-message">Failed to send message. Please try again.</div>';
+                }
+            } catch (error) {
+                formStatus.innerHTML = '<div class="error-message">An error occurred. Please try again later.</div>';
+            }
+        });
+
+        // Project card click handler
+        document.querySelectorAll('.project-card').forEach(card => {
+            card.addEventListener('click', function() {
+                const projectId = this.dataset.projectId;
+                window.location.href = `project-details.html?id=${projectId}`;
+            });
+        });
+
+        // Mobile Menu Toggle
+        const menuBtn = document.querySelector('.menu-btn');
+        const navItems = document.querySelector('.nav-items');
+        
+        menuBtn.addEventListener('click', () => {
+            menuBtn.classList.toggle('open');
+            navItems.classList.toggle('active');
+        });
+
+        // Close menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!menuBtn.contains(e.target) && !navItems.contains(e.target)) {
+                menuBtn.classList.remove('open');
+                navItems.classList.remove('active');
+            }
+        });
+
+        // View More Button
+        const viewMoreBtn = document.getElementById('viewMoreBtn');
+        const hiddenProjects = document.querySelector('.hidden-projects');
+
+        viewMoreBtn.addEventListener('click', () => {
+            hiddenProjects.classList.add('show');
+            viewMoreBtn.style.display = 'none';
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
