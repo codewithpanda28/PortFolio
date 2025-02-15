@@ -1,88 +1,76 @@
-- **Project Name:** Modern Portfolio & Old Book Buy/Sell Platform  
-- **Tech Stack:** HTML, CSS (Tailwind), JavaScript, Next.js, Redux  
-
-Let me know if you want any modifications!  
-
----
 
 ```md
-# 📌 Modern Portfolio & Old Book Buy/Sell Platform
+# 🚀 Akash Kumar – Personal Portfolio  
 
-## 🚀 Overview
-This project includes **Modern Portfolio Templates** and an **Old Book Buy/Sell Platform** built using **Next.js, React, Tailwind CSS, and Redux**. The portfolio showcases fully responsive designs, while the book platform allows users to buy and sell used books.
+Welcome to my personal portfolio website! This portfolio showcases my skills, projects, and experience as a **Frontend Developer**. Built with **Next.js, Tailwind CSS, and JavaScript**, it provides an interactive and responsive experience.  
 
----
-
-## 📂 Folder Structure  
-```
-project-folder/
-│── index.html           # Main Portfolio Page
-│── project-details.html # Individual Project Details
-│── projects.js          # Project Data
-│── script.js            # Main JavaScript File
-│── styles.css           # Stylesheet
-│── assets/              # Images & Media
-│── README.md            # Documentation
-```
+🔗 **Live Portfolio:** [cwp-portfolio.netlify.app](https://cwp-portfolio.netlify.app/)  
 
 ---
 
-## 🌟 Features
+## 📌 Features  
 
-### 📌 **Modern Portfolio Templates**
-- ✅ Fully responsive design
-- 🎨 Dark Mode & multiple themes
-- 🎥 Animated UI using AOS.js
-- 📂 Dynamic project showcase with GitHub links
-- 📩 Contact form integration with EmailJS
-
-### 📚 **Old Book Buy/Sell Platform**
-- 🔐 User authentication (Login/Signup)
-- 📖 Buy & Sell used books easily
-- 🔍 Search and browse books
-- 📱 Mobile-friendly, fully responsive
-- 🛠 Redux Toolkit for state management
+✅ **Fully Responsive** – Works on all devices.  
+🎨 **Dark Mode Support** – Toggle between light and dark mode.  
+⚡ **Smooth Animations** – Enhancing user experience with AOS.js.  
+🖥️ **Project Showcase** – Displaying my best work with GitHub links.  
+📄 **Download Resume** – Direct resume download option.  
+📩 **Contact Form** – Built-in form for direct communication.  
 
 ---
 
-## 🛠 Tech Stack
+## 🛠 Tech Stack  
 
 | Technology  | Usage |
 |------------|----------------|
-| **Next.js** | Frontend framework |
-| **React**   | Component-based UI |
-| **Redux Toolkit** | State management |
-| **Tailwind CSS** | Styling |
-| **AOS.js** | Animations |
-| **Lucide Icons** | Icons |
+| **Next.js** | Framework for React |
+| **React.js** | Component-based UI |
+| **Tailwind CSS** | Styling & Layout |
+| **JavaScript (ES6)** | Interactivity & Logic |
+| **AOS.js** | Smooth animations |
+| **Lucide & FontAwesome** | Icons |
 | **EmailJS** | Contact form handling |
 
 ---
 
-## 🚀 Installation & Setup
+## 📂 Folder Structure  
 
-### 1️⃣ **Clone the Repository**
-```sh
-git clone https://github.com/codewithpanda28/Modern-Portfolio-Templates.git
-cd Modern-Portfolio-Templates
+```
+portfolio/
+│── public/               # Static assets (images, icons)
+│── components/           # Reusable React components
+│── pages/                # Portfolio pages (Home, Projects, Contact)
+│── styles/               # Tailwind CSS and global styles
+│── script.js             # Main JavaScript functions
+│── README.md             # Documentation
 ```
 
-### 2️⃣ **Install Dependencies**
+---
+
+## 🚀 Setup & Installation  
+
+### 1️⃣ Clone the Repository  
+```sh
+git clone https://github.com/codewithpanda28/portfolio.git
+cd portfolio
+```
+
+### 2️⃣ Install Dependencies  
 ```sh
 npm install
 # or
 yarn install
 ```
 
-### 3️⃣ **Run the Development Server**
+### 3️⃣ Run the Development Server  
 ```sh
 npm run dev
 # or
 yarn dev
 ```
-Visit **[http://localhost:3000](http://localhost:3000)** to see the app.
+Visit **[http://localhost:3000](http://localhost:3000)** to view the portfolio.  
 
-### 4️⃣ **Build the Project**
+### 4️⃣ Build for Deployment  
 ```sh
 npm run build
 # or
@@ -92,6 +80,7 @@ yarn build
 ---
 
 ## 📬 Contact Me  
+
 📧 **Email:** [akashkumar.webdev@gmail.com](mailto:akashkumar.webdev@gmail.com)  
 📞 **Phone:** +91 8252472186  
 
@@ -104,5 +93,14 @@ yarn build
 ---
 
 ## 📜 License  
-This project is licensed under the **MIT License** – feel free to modify and use it.  
+This portfolio is licensed under the **MIT License** – Feel free to use and modify.  
 ```
+
+### ✅ What This README Covers:
+✔ **Your Portfolio’s Purpose**  
+✔ **Features & Technologies Used**  
+✔ **Folder Structure**  
+✔ **Installation & Deployment Steps**  
+✔ **Contact & Social Links**  
+
+Now, you can upload this README file to your **GitHub repository** to give visitors a clear understanding of your **portfolio website**. Let me know if you need any modifications! 🚀🔥
