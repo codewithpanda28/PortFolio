@@ -2733,6 +2733,9 @@ i {
     transition: all 0.3s ease;
 }
 
+.skill-item a{
+    text-decoration: none;
+}
 .btn:hover i {
     animation: iconShake 0.5s ease;
     transform: translateX(5px);
